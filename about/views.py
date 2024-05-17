@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import View
 
-class ContactView(View):
+class AboutView(View):
     def get(self, request):
-        return render(request, "contact.html")
+        return render(request, "about.html")
