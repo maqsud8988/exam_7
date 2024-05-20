@@ -9,3 +9,11 @@ class FurnituresView(View):
             "furnitures": furnitures
         }
         return render(request, "furnitures.html", contexs)
+
+    def post(self, request):
+        search = request.POST.get("search")
+        furnitures = Furnitures.objects.filter(name__icontains=search)
+        contexs = {
+            "furnitures": furnitures
+        }
+        return render(request, "furnitures.html", contexs)

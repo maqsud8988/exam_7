@@ -20,3 +20,4 @@ class LandingView(View):
             "services": service
         }
         return render(request, "index.html", context)
+

@@ -15,9 +15,9 @@ from import_export.admin import ImportExportModelAdmin
 class ServiceAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     search_fields = ('AboutOurCarService',)  # Qidirish imkoniyatlari
 
-    # Import/export sozlashlari
-    list_display = ('id', 'AboutOurCarService')  # Listga qo'shish
-    list_filter = ('AboutOurCarService',)  # Filtrlash
+    # Import export sozlashlari
+    list_display = ('id', 'AboutOurCarService')
+    list_filter = ('AboutOurCarService',)
     fieldsets = (
         (None, {
             'fields': ('AboutOurCarService',)

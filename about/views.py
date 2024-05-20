@@ -11,3 +11,11 @@ class AboutView(View):
         }
         return render(request, "about.html", contexs)
 
+    def post(self, request):
+        search = request.POST.get("search")
+        service = Service.objects.filter(name__icontains=search)
+        contexs = {
+            "service": service
+        }
+        return render(request, "about.html", contexs)
+
