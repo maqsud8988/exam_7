@@ -8,8 +8,3 @@ class ContactAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
     list_display = ('id', 'full_name')  # Listga qo'shish
     list_filter = ('full_name',)  # Filtrlash
-    fieldsets = (
-        (None, {
-            'fields': ('full_name',)
-        }),
-    )

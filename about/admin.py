@@ -18,8 +18,3 @@ class ServiceAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     # Import export sozlashlari
     list_display = ('id', 'AboutOurCarService')
     list_filter = ('AboutOurCarService',)
-    fieldsets = (
-        (None, {
-            'fields': ('AboutOurCarService',)
-        }),
-    )

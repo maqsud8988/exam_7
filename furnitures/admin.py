@@ -9,11 +9,6 @@ class FurnituresAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
     list_display = ('id', 'WhatWeDo')  # Listga qo'shish
     list_filter = ('WhatWeDo',)  # Filtrlash
-    fieldsets = (
-        (None, {
-            'fields': ('WhatWeDo',)
-        }),
-    )
 
 
 

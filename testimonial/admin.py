@@ -8,10 +8,6 @@ class TestimonialAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
     list_display = ('id', 'name')  # Listga qo'shish
     list_filter = ('name',)  # Filtrlash
-    fieldsets = (
-        (None, {
-            'fields': ('name',)
-        }),
-    )
+
 
 
